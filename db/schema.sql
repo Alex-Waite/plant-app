@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS eleanordb;
+CREATE DATABASE eleanordb;
