@@ -7,6 +7,7 @@ import Homepage from './pages/Homepage';
 import Footer from './components/Footer';
 import RegisterPage from './pages/RegisterPage';
 import SignInPage from "./pages/SignInPage"
+import ShopPage from './pages/ShopPage';
 
 import {Switch, Route, BrowserRouter} from "react-router-dom";
 
@@ -25,10 +26,13 @@ function App() {
             <SignInPage/>
           </Route>
 
+          <Route exact path="/shop">
+            <ShopPage/>
+          </Route>
+
           <Route>
             <Homepage/>
           </Route>
-
 
         </Switch>
       </BrowserRouter>

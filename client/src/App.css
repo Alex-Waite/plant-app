@@ -101,6 +101,11 @@ font-family: 'Shadows Into Light', cursive;
   background-size: cover;
 }
 
+.alxSearch {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+
 .mainBannerText {
   -webkit-text-stroke: black 3px;
   color: white;
@@ -251,4 +256,11 @@ footer {
     font-size: 1.2rem;
   }
 
+}
+
+.customShopBanner {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
