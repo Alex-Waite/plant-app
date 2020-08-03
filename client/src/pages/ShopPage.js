@@ -11,4 +11,4 @@ function ShopPage() {
     )
 }
 
-export default ShopPage
+export default ShopPage;
