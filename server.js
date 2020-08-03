@@ -37,12 +37,15 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
 
 // Add routes, both API and view
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
+const apiRouter = require("./routes/api-routes")
+app.use("/api", apiRouter)
 
 // Start the API server
 db.sequelize.sync().then(function () {
