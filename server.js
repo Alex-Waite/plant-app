@@ -5,11 +5,12 @@ const PORT = process.env.PORT || 3001;
 var session = require("express-session");
 var passport = require("./config/passport");
 var compression = require('compression')
+var path = require("path")
 
 var db = require("./models")
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
+
 
 
 app.use(compression({
@@ -26,6 +27,7 @@ function shouldCompress(req, res) {
   return compression.filter(req, res)
 }
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
