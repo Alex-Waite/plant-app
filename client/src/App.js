@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <BrowserRouter basename="Project3">
+      <BrowserRouter basename="plant-app">
         <Switch>
 
           <Route exact path="/register">
