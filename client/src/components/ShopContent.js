@@ -1,16 +1,45 @@
-import React from "react"
+import React, {useState} from "react"
+import API from "../utils/API.js"
+var axios =  require("axios")
+const APIKEY = "_Z7tb-K4C49IqWHoxXntndWoQY4ImaBOq1jMifpQOh4"
+
 
 function SignInContent() {
+
+  const [searchVal, setsearchVal] = useState("")
+
+function searchPlants(event) {
+  event.preventDefault();
+  console.log(searchVal)
+var config = {
+  method: 'get',
+  url: `https://trefle.io/api/v1/plants?token=${APIKEY}&filter[common_name]=${searchVal}`,
+  mode: "no-cors",
+  headers: {"Access-Control-Allow-Origin": "*"}
+};
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+}
+
+
     return (
     <div className="customShopBanner">
         <div className="titleTextContainer">
             <div className="row">
                 <div className="col-md-12">
                     <h1 className="mainBannerText">~~~~~~Browse for plants!~~~~~~</h1>
-                    <div class="form-group alxFormGroup">
-                        <label for="exampleInputUser1" className="alxFormHeader">Search the database!</label>
-                        <input type="username" class="form-control alxFormInput" id="username-input" placeholder="Look for a plant!" />
-                    </div>
+                    <form class="signup" onSubmit={searchPlants}>
+                      <div class="form-group alxFormGroup">
+                          <label for="exampleInputUser1" className="alxFormHeader">Search the database!</label>
+                          <input type="username" class="form-control alxFormInput" id="username-input" placeholder="Look for a plant!" value={searchVal} onChange={event => setsearchVal(event.target.value)} />
+                          <button type="submit" class="btn btn-success alxCustomSearchBtn">Search</button>
+                      </div>
+                    </form>
                     <div className="row">
                     <div class="col-md-3">
                         <div class="card border-dark m-2">

@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project 3: Eleanor
 
-## Available Scripts
+Project Eleanor is the third and final project I have been tasked to complete in the University of Adelaide's coding boot camp. The project must be built using a MERN stack and deployed through Heroku, The goal of the project is to demonstrate my new skills and proficiency in full stack development.
 
-In the project directory, you can run:
+![Screenshot-of-app](screeny.png)
 
-### `npm start`
+## -Concept-
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+My idea is to create a gardening subscription box service in which users can find specific plants to grow based on data from their location with a fallback plan of creating an E-Store for seeds online.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+An alternate option would be to send a randoom selection of plants and provide a generated guide with Information on how to grow the plant, time to harvest,
 
-### `npm test`
+The app would work by utilising API's to to link data based on location (_Factors such as humidity, rainfall and sunlight_) and to another API which will include data centered around the conditions certain crops/plants require to flourish. When the user sets up their profile I will gather all information nececary for the app to function. Then monthly the user would reciece a package of a few seeds/fertalizers/garderning tools that are fitting for the users conditions
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## -Fallback-
 
-### `npm run build`
+As a subscription box service is quite an overwhelming task and very different to anything I have done before so if I feel a good option would be to build a basic seed Webstore and using the same API and everything so that once the basic functionallity of the store is complete I can create a "Buy a monthy Subscription" module to the store, this breaks my task into 2 and means if only the first component is completed the project is still presentable and the second module can be worked on as a passion project.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## _MY SAVED LINKS_
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[Plant api](https://docs.trefle.io/docs/advanced/plants-fields)'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
+If you have any questions or would like to report any bugs you can contact me at alexanderconorwaite@gmail.com
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Find me on linkedIn!](https://www.linkedin.com/in/alexander-waite-005165199/) 
+  
+[![Follow me on GitHub!](https://img.shields.io/github/followers/alex-waite?label=Follow%20me%20on%20GitHub%21&style=social)](https://github.com/alex-waite)
